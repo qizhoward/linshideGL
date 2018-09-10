@@ -1,0 +1,10 @@
+C:\Users\Sony-Pc\Desktop\dockpanelsuite-master\WinFormsUI\bin\Debug\license.txt
+C:\Users\Sony-Pc\Desktop\dockpanelsuite-master\WinFormsUI\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll
+C:\Users\Sony-Pc\Desktop\dockpanelsuite-master\WinFormsUI\bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.pdb
+C:\Users\Sony-Pc\Desktop\dockpanelsuite-master\WinFormsUI\bin\Debug\WeifenLuo.WinFormsUI.Docking.pdb
+C:\Users\Sony-Pc\Desktop\dockpanelsuite-master\WinFormsUI\obj\Debug\ThemeVS2005Multithreading.csprojResolveAssemblyReference.cache
+C:\Users\Sony-Pc\Desktop\dockpanelsuite-master\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.ThemeVS2005Multithreading.Resources.resources
+C:\Users\Sony-Pc\Desktop\dockpanelsuite-master\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.ThemeVS2005Multithreading.Strings.resources
+C:\Users\Sony-Pc\Desktop\dockpanelsuite-master\WinFormsUI\obj\Debug\ThemeVS2005Multithreading.csproj.GenerateResource.Cache
+C:\Users\Sony-Pc\Desktop\dockpanelsuite-master\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.dll
+C:\Users\Sony-Pc\Desktop\dockpanelsuite-master\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2005Multithreading.pdb

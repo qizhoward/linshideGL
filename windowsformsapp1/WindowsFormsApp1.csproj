@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F03B60D5-636C-42CE-86DE-2A77C7DC6934}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>cainiao</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>imageres_5309.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Apex">
+      <HintPath>..\Apex.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SharpGL">
+      <HintPath>..\SharpGL.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.SceneGraph">
+      <HintPath>..\SharpGL.SceneGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.WinForms">
+      <HintPath>..\SharpGL.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.15.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015">
+      <HintPath>bin\Debug\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customization\DockHelper.cs" />
+    <Compile Include="Dummy\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\Doc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\Doc.Designer.cs">
+      <DependentUpon>Doc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\DrawWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\DrawWindow.Designer.cs">
+      <DependentUpon>DrawWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\mouseandkeyboard.cs" />
+    <Compile Include="Dummy\OutputWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\OutputWindow.Designer.cs">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\PropertyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\PropertyWindow.Designer.cs">
+      <DependentUpon>PropertyWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\SolutionExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\SolutionExplorer.Designer.cs">
+      <DependentUpon>SolutionExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\TaskList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\TaskList.Designer.cs">
+      <DependentUpon>TaskList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\Toolbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\Toolbox.Designer.cs">
+      <DependentUpon>Toolbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dummy\ToolWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dummy\ToolWindow.Designer.cs">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Figures\ArcBall.cs" />
+    <Compile Include="Figures\ArcBallTransformationEffect.cs" />
+    <Compile Include="Figures\Axies.cs" />
+    <Compile Include="Figures\cursor.cs" />
+    <Compile Include="Figures\FrameElement.cs" />
+    <Compile Include="Figures\GridElement.cs" />
+    <Compile Include="Figures\Plane.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadScene\LoadScene.cs" />
+    <Compile Include="Printer\PrintMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printer\PrintMgrForm.Designer.cs">
+      <DependentUpon>PrintMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printer\PrintSetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printer\PrintSetupForm.Designer.cs">
+      <DependentUpon>PrintSetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printer\ReNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printer\ReNameForm.Designer.cs">
+      <DependentUpon>ReNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printer\SaveAsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printer\SaveAsForm.Designer.cs">
+      <DependentUpon>SaveAsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printer\ViewSheetSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printer\ViewSheetSetForm.Designer.cs">
+      <DependentUpon>ViewSheetSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dummy\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dummy\Doc.resx">
+      <DependentUpon>Doc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dummy\DrawWindow.resx">
+      <DependentUpon>DrawWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dummy\OutputWindow.resx">
+      <DependentUpon>OutputWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dummy\PropertyWindow.resx">
+      <DependentUpon>PropertyWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dummy\TaskList.resx">
+      <DependentUpon>TaskList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dummy\Toolbox.resx">
+      <DependentUpon>Toolbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dummy\ToolWindow.resx">
+      <DependentUpon>ToolWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printer\PrintMgrForm.resx">
+      <DependentUpon>PrintMgrForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printer\PrintSetupForm.resx">
+      <DependentUpon>PrintSetupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printer\ReNameForm.resx">
+      <DependentUpon>ReNameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printer\SaveAsForm.resx">
+      <DependentUpon>SaveAsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printer\ViewSheetSetForm.resx">
+      <DependentUpon>ViewSheetSetForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20150101202622.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="imageres_5309.ico" />
+    <Content Include="Image\ArrowDown.bmp" />
+    <Content Include="Image\ArrowUp.bmp" />
+    <Content Include="Image\Bitmap.ico" />
+    <Content Include="Image\BlankIcon.ico" />
+    <Content Include="Image\ClosedFolder.ICO" />
+    <Content Include="Image\CSFile.ico" />
+    <Content Include="Image\CSProject.ico" />
+    <Content Include="Image\File.ico" />
+    <Content Include="Image\Form.ico" />
+    <Content Include="Image\Logo.ico" />
+    <Content Include="Image\Mouse.bmp" />
+    <Content Include="Image\msenv22.ico" />
+    <Content Include="Image\New.ico" />
+    <Content Include="Image\Open.ico" />
+    <Content Include="Image\OpenFolder.ICO" />
+    <Content Include="Image\OutputWindow.ico" />
+    <Content Include="Image\PropertyWindow.ico" />
+    <Content Include="Image\Reference.ico" />
+    <Content Include="Image\References.ico" />
+    <Content Include="Image\SolutionExplorer.ico" />
+    <Content Include="Image\SplashScreen.png" />
+    <Content Include="Image\TaskListWindow.ico" />
+    <Content Include="Image\ToolboxWindow.ico" />
+    <Content Include="Image\XmlFile.ico" />
+    <None Include="Resources\SplashScreen4.PNG" />
+    <None Include="Resources\SplashScreenPic1.jpg" />
+    <None Include="Resources\SplashScreenPic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
